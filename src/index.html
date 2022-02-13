@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MMM</title>
+  <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+ 
+  <div class="input-div"><p id="in">0</p></div>
+ <div class="btn-div">
+    <div class="row-div">
+         <button onclick="addVal('(')">(</button>
+         <button onclick="addVal(')')">)</button>
+         <button onclick="addVal('**')">**</button>
+         <button onclick="addVal('C')">C</button>
+    </div>
+    <div class="row-div">
+         <button onclick="addVal('7')">7</button>
+         <button onclick="addVal('8')">8</button>
+         <button onclick="addVal('9')">9</button>
+         <button onclick="addVal('*')">*</button>
+    </div>
+    <div class="row-div">
+        <button onclick="addVal('4')">4</button>
+        <button onclick="addVal('5')">5</button>
+        <button onclick="addVal('6')">6</button>
+        <button onclick="addVal('+')">+</button>
+   </div>
+   <div class="row-div">
+        <button onclick="addVal('1')">1</button>
+        <button onclick="addVal('2')">2</button>
+        <button onclick="addVal('3')">3</button>
+        <button onclick="addVal('-')">-</button>
+   </div>
+   <div class="row-div">
+        <button onclick="addVal('/')">/</button>
+        <button onclick="addVal('0')">0</button>
+        <button onclick="addVal('.')">.</button>
+        <button onclick="addVal('=')">=</button>
+   </div>
+ </div>
+</body>
+</html>
+
+<script>
+
+let str ="";
+
+let addVal = (e)=>{
+  if(e=='C') str="";
+  else 
+  if(e=='=') {
+      try {
+         str= eval(str); 
+      } catch (error) {
+         str="Error"
+      }
+  }
+  else str=str+e;
+  document.getElementById("in").innerText = str ;
+}
+
+</script>

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+* {
+   margin: 0px;  
+   font-family: 'Kanit', sans-serif;
+
+}
+
+body {
+  background-color:  #eeefef ;
+ 
+}
+
+
+.input-div {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.input-div p{
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px; 
+}
+
+.row-div {
+  width: 100%;
+  height: 50px;
+  margin-top: 2px;
+}
+
+.row-div button {
+  width: 24%;
+  height: 100%;
+  font-size: 25px;
+  border: 0px;
+  font-weight: 700;
+  background-color: #fbfcfd ;
+}
+
+.row-div button:hover{
+   background-color: #a2bbe3 ;
+}
